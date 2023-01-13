@@ -15,9 +15,10 @@ body {
 }
 
 .container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    justify-content: space-around;
+    gap: -1rem;
     width: 640px;
     height: 300px;
     background-color: transparent;
@@ -26,6 +27,10 @@ body {
 }
 
 .container div {
+    margin: 0 auto;
+}
+
+.card {
     width: 170px;
     height: 150px;
     display: flex;
@@ -47,4 +52,10 @@ body {
 
 .container span.tempo {
     font-size: 1rem;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
